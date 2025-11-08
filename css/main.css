@@ -13,7 +13,7 @@ body {
 
 .container {
 	padding: 0 134px;
-	max-width: 1200px;
+	max-width: 1441px;
 	margin: 0 auto;
 	width: 100%;
 }
@@ -63,6 +63,7 @@ body {
 .awards__title h2 {
 	font-size: 28px;
 	font-weight: 600;
+	margin-top: 87px;
 }
 .awards__logos {
 	display: grid;
@@ -92,7 +93,7 @@ body {
 
 /* ===== SUBSCRIBE SECTION ===== */
 .subscribe {
-	background: #e6e6e6;
+	background: #ffffff;
 	color: #474747;
 	text-align: center;
 	padding: 60px 0;
@@ -106,34 +107,208 @@ body {
 }
 .subscribe__form {
 	position: relative;
+	max-width: 770px;
 	width: 100%;
-	max-width: 500px;
+	/* display: flex;
+	justify-content: center; */
 	margin: 0 auto;
 }
 .subscribe__form input {
-	width: 100%;
-	padding: 16px 120px 16px 20px;
+	/* width: 100%; */
+	padding: 28px 518px 24px 34px;
 	border: none;
-	border-radius: 50px;
-	font-size: 16px;
+	border-radius: 16px;
+	font-size: 20px;
+	font-weight: 400;
+	color: #666666;
 	outline: none;
+	background-color: #e6e6e6;
 }
 .subscribe__form button {
 	position: absolute;
 	top: 50%;
 	right: 5px;
 	transform: translateY(-50%);
-	background: #0052cc;
+	background: #4579CB;
 	border: none;
 	color: #fff;
-	padding: 12px 30px;
-	border-radius: 50px;
+	padding: 11px 26px;
+	border-radius: 8px;
 	cursor: pointer;
-	font-weight: 500;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
 	transition: background 0.3s;
 }
 .subscribe__form button:hover {
 	background: #003d99;
+}
+
+/* Production Section */
+.production__title {
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 48px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: #474747;
+}
+
+.production__paragraph {
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: #666666;
+	margin-top: 24px;
+	margin-bottom: 59px;
+}
+
+.productionMiddle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 29px;
+}
+
+.leftPro__middle {
+	position: relative;
+	background-image: url('../images/production/image\ 11-1.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 570px;
+	height: 350px;
+	box-shadow: 10px 10px 40px 0px #00000040;
+	/* padding: 214px 427px 23px 28px; */
+	border-radius: 30px;
+}
+
+.production__shape {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.rightPro__middle {
+	position: relative;
+	background-image: url(../images/production/image\ 11.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 570px;
+	height: 350px;
+	box-shadow: 10px 10px 40px 0px #00000040;
+	border-radius: 30px;
+}
+
+.plygon__box {
+	display: flex;
+	justify-content: center;
+	/* margin-left: 82px; */
+	margin-top: 115px;
+}
+
+.poly__img {
+	position: absolute;
+	z-index: 1;
+	padding: 25px;
+	border-radius: 50%;
+	background-color: #E5E5E5;
+	opacity: 80%;
+}
+
+.Pro__middle__text {
+	position: absolute;
+	left: 28px;
+	bottom: 69px;
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 36px;
+	letter-spacing: 0%;
+	color: #ffffff;
+	z-index: 1;
+}
+
+.Pro__middle__ndtext {
+	position: absolute;
+	left: 28px;
+	bottom: 23px;
+	z-index: 1;
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: #ffffff;
+}
+
+/* ASKED Section */
+.asked__title {
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 48px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: #474747;
+	margin-top: 120px;
+}
+
+.asked__paragraph {
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: #666666;
+	margin-top: 24px;
+	margin-bottom: 52px;
+}
+
+.input__itemBox{
+	display: flex;
+	align-items: center;
+	margin-bottom: 33px;
+}
+
+.pair__inputs {
+	display: flex; 
+	gap: 30px; 
+	justify-content: center; 
+	align-items: center;
+}
+
+.input__item {
+	width: 570px;
+	/* height: 70px; */
+	/* padding: 23px 469px 23px 27px; */
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	color: #8c8c8c;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: 1px solid #CACACA;
+	padding: 23px 405px 23px 27px; 
+	border-right: none;
+	
+}
+
+.down__input {
+	padding-right: 42px;
+	border: 1px solid #CACACA;
+	padding-top: 29px;
+	padding-bottom: 32px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-left: none;
 }
 
 /* ===== FOOTER SECTION ===== */
