@@ -1,56 +1,69 @@
 /* Fonts: Roboto, Inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* General */
 body {
-	font-family: "Poppins", sans-serif;
+	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 	background: #f8f9fb;
 	color: #333;
 }
 
+.container {
+	padding: 0 140px;
+}
 
-/* .container {
-	max-width: 1100px;
-	font-family: 'Roboto', sans-serif;
-	} */
-	
-	.container {
-		padding: 0 134px;
-		max-width: 1441px;
-		margin: 0 auto;
-		width: 100%;
-	}
-	
-	/* Header */
-	.header__container {
-		display: flex;
-		justify-content: space-between;
-  }
+/* Buttons */
+.btn-primary {
+	padding: 13px 34px;
+	border: none;
+	border-radius: 8px;
+	background: #4579cb;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+}
 
-  .header__logo {
+.container {
+	padding: 0 134px;
+	max-width: 1441px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* Header */
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo {
 	font-family: 'Segoe UI', sans-serif;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 100%;
 	letter-spacing: 0%;
-	color: #4579CB;
-  }
+	color: #4579cb;
+}
 
-  .header__navlinks {
+.header__navlinks {
 	display: flex;
 	align-items: center;
 	gap: 40px;
 	list-style: none;
-  }
+}
 
-  .header__navlinks__item {
+.header__navlinks__item {
 	font-family: 'Segoe UI', sans-serif;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0%;
 	transition: 0.9s ease;
-
 }
 
 .header__navlinks__itemHref {
@@ -64,8 +77,49 @@ body {
 	border-radius: 8px;
 	color: #ffffff;
 	text-decoration: none;
-  }
+}
 
+/* Group */
+.group {
+	padding: 60px;
+}
+
+.group__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 90px;
+}
+
+.group__image__side {
+	width: 456px;
+	height: 418px;
+}
+
+.group__image__side img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.group__text__side {
+	max-width: 558px;
+}
+
+.group__text__title {
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 48px;
+	letter-spacing: 0%;
+}
+
+.group__text__description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	color: '#666666';
+}
 
 /* ===== AWARDS SECTION ===== */
 .awards {
@@ -145,7 +199,7 @@ body {
 	top: 50%;
 	right: 5px;
 	transform: translateY(-50%);
-	background: #4579CB;
+	background: #4579cb;
 	border: none;
 	color: #fff;
 	padding: 11px 26px;
@@ -232,7 +286,7 @@ body {
 	z-index: 1;
 	padding: 25px;
 	border-radius: 50%;
-	background-color: #E5E5E5;
+	background-color: #e5e5e5;
 	opacity: 80%;
 }
 
@@ -286,23 +340,20 @@ body {
 	margin-bottom: 52px;
 }
 
-.input__itemBox{
+.input__itemBox {
 	display: flex;
 	align-items: center;
 	margin-bottom: 33px;
 }
 
 .pair__inputs {
-	display: flex; 
-	gap: 30px; 
-	justify-content: center; 
+	display: flex;
+	gap: 30px;
+	justify-content: center;
 	align-items: center;
 }
 
 .input__item {
-	width: 570px;
-	/* height: 70px; */
-	/* padding: 23px 469px 23px 27px; */
 	font-family: 'Segoe UI', sans-serif;
 	font-weight: 700;
 	font-size: 16px;
@@ -311,15 +362,14 @@ body {
 	color: #8c8c8c;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-	border: 1px solid #CACACA;
-	padding: 23px 405px 23px 27px; 
+	border: 1px solid #cacaca;
+	padding: 23px 405px 23px 27px;
 	border-right: none;
-	
 }
 
 .down__input {
 	padding-right: 42px;
-	border: 1px solid #CACACA;
+	border: 1px solid #cacaca;
 	padding-top: 29px;
 	padding-bottom: 32px;
 	border-top-right-radius: 10px;
@@ -379,131 +429,130 @@ body {
 	background: #000;
 	text-align: center;
 	padding: 70px 0;
-  }
-  
-  .container {
+}
+
+.container {
 	width: 90%;
 	max-width: 1100px;
 	margin: 0 auto;
-  }
-  
-  /* Hero */
-  .hero {
+}
+
+/* Hero */
+.hero {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background: #FAFCFF;
+	background: #fafcff;
 	padding: 60px 0;
-  }
-  
-  .hero__content {
+}
+
+.hero__content {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	gap: 30px;
-	flex-direction: row-reverse;   
-  }
-  
-  .hero__title {
+	flex-direction: row-reverse;
+}
+
+.hero__title {
 	font-size: 26px;
 	font-weight: 600;
-  }
-  
-  .hero__description {
+}
+
+.hero__description {
 	color: #555;
 	margin: 15px 0;
-  }
-  
-  .hero__button {
+}
+
+.hero__button {
 	background: #4a7eff;
 	color: white;
 	border: none;
 	padding: 10px 20px;
 	border-radius: 6px;
 	cursor: pointer;
-  }
-  
-  .hero__image img {
+}
+
+.hero__image img {
 	width: 558px;
-  }
-  
-  /* Why Section */
-  .why {
+}
+
+/* Why Section */
+.why {
 	text-align: center;
-	padding: 70px 0;
-  }
-  
-  .why__title {
+}
+
+.why__title {
 	font-size: 28px;
 	margin-bottom: 10px;
-  }
-  
-  .why__text {
+}
+
+.why__text {
 	color: #777;
 	max-width: 600px;
 	margin: 0 auto 40px;
-  }
-  
-  .why__grid {
+}
+
+.why__grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 	gap: 20px;
-  }
-  
-  .why__card {
+}
+
+.why__card {
 	background: #fff;
 	border-radius: 12px;
 	padding: 25px;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 	transition: transform 0.2s;
-  }
-  
-  .why__card:hover {
+}
+
+.why__card:hover {
 	transform: translateY(-5px);
-  }
-  
-  .why__icon {
+}
+
+.why__icon {
 	width: 50px;
 	margin-bottom: 10px;
-  }
-  
-  /* Testimonial */
-  .testimonial {
+}
+
+/* Testimonial */
+.testimonial {
 	background: #fff;
 	padding: 80px 0;
-  }
-  
-  .testimonial__content {
+}
+
+.testimonial__content {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	gap: 50px;
-  }
-  
-  .testimonial__image img {
+}
+
+.testimonial__image img {
 	width: 470px;
 	border-radius: 50%;
-  }
-  
-  .testimonial__quote {
+}
+
+.testimonial__quote {
 	font-style: italic;
 	color: #555;
-  }
-  
-  .testimonial__controls {
+}
+
+.testimonial__controls {
 	margin-top: 15px;
-  }
-  
-  .testimonial__btn {
+}
+
+.testimonial__btn {
 	border: none;
 	background: #eee;
 	padding: 8px 12px;
 	margin: 0 4px;
 	border-radius: 5px;
 	cursor: pointer;
-  }
-  
-  .testimonial__btn--next {
+}
+
+.testimonial__btn--next {
 	background: #4a7eff;
 	color: white;
-  }
+}
